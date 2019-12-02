@@ -1,3 +1,8 @@
+interface Person {
+    firstName: string;
+    lastname: string;
+}
+
 function greeter(person:string) {
     return 'Hello, ' + person;
 };
