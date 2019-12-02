@@ -2,6 +2,6 @@ function greeter(person:string) {
     return 'Hello, ' + person;
 };
 
-let user =  [0,1,2]; //'Joan Bosch';
+let user = 'Joan Bosch';
 
-document.body.textContent = greeter();
+document.body.textContent = greeter(user);
