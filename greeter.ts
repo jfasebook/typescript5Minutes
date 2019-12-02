@@ -1,12 +1,12 @@
 interface Person {
     firstName: string;
-    lastname: string;
+    lastName: string;
 }
 
-function greeter(person:string) {
-    return 'Hello, ' + person;
+function greeter(person:Person) {
+    return ['Hello', person.firstName, person.lastName].join(' ');
 };
 
-let user = 'Joan Bosch';
+let user = { firstName: 'Joan', lastName: 'Bosch'};
 
 document.body.textContent = greeter(user);
